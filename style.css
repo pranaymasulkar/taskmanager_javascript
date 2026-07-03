@@ -346,19 +346,13 @@ Responsive
   border: 1px solid;
   color: white;
   text-align: center;
-  padding: 3rem 0;
+  padding: 3rem 2rem;
   font-size: 2rem;
   margin-top: 5rem;
-
   border-radius: 18px;
-
   background: rgba(144, 2, 2, 0.339);
-
   backdrop-filter: blur(18px);
-
   border: 1px solid rgba(255, 255, 255, 0.2);
-
   color: white;
-
   transition: 0.3s;
 }
