@@ -1,13 +1,46 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <div class="top-bar">
+        <h1>Task Manager</h1>
+
+        <button id="addTaskBtn">+ Add Task</button>
+      </div>
+
+      <!-- Modal -->
+      <div id="taskModal" class="modal">
+        <div class="modal-content">
+          <button id="closeModal">X</button>
+          <form id="taskForm">
+            <input type="text" placeholder="Enter Task" id="taskTitle" />
+
+            <select id="taskCategory">
+              <option value="">Select Category</option>
+              <option value="Work">Work</option>
+              <option value="Personal">Personal</option>
+              <option value="Study">Study</option>
+              <option value="Shopping">Shopping</option>
+              <option value="Health">Health</option>
+            </select>
+
+            <button id="submitBtn">Add Task</button>
+          </form>
+        </div>
+      </div>
+
+      <section class="main-container">
+        <div id="noTask"></div>
+        <div id="card-section" class="card-section"></div>
+      </section>
+    </main>
+
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
